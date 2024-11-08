@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const main = document.querySelector('main');
     const backgroundVideo = document.getElementById('backgroundVideo');
     const sections = document.querySelectorAll('.floating-box');
+    const walkingBot = document.getElementById('walkingBot');
 
     main.style.paddingTop = `${header.offsetHeight}px`;
 
@@ -30,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const headerOpacity = Math.max(0, 1 - scrollY / 300);
         header.style.opacity = headerOpacity;
     });
-});
-document.addEventListener("DOMContentLoaded", () => {
+
+    // Hover effect for floating boxes
     const floatingBoxes = document.querySelectorAll('.floating-box');
 
     floatingBoxes.forEach(box => {
@@ -45,10 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
             box.style.transition = 'transform 0.3s ease';
         });
     });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const walkingBot = document.getElementById('walkingBot');
 
     if (!walkingBot) {
         console.error("Walking Bot element not found");
@@ -63,15 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set initial styles for the thank you message
     thankYouMessage.style.position = 'absolute'; // Allows positioning based on bot's position
-    thankYouMessage.style.background = 'FFFFFF'; // Bright red for debugging
-    thankYouMessage.style.color = 'FFFFFF';
+    thankYouMessage.style.background = '#FFFFFF'; // Background color for message
+    thankYouMessage.style.color = '#000000'; // Text color for message
     thankYouMessage.style.padding = '10px 20px';
     thankYouMessage.style.borderRadius = '5px';
     thankYouMessage.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.5)';
     thankYouMessage.style.zIndex = '9999';
     thankYouMessage.style.display = 'none';
 
-    // Function to display the thank you message above the bot
+    // Function to display the thank you message above the bot and change the background video
     function showThankYouMessage() {
         console.log("Bot clicked - Showing Thank You message above the bot");
 
@@ -84,6 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Show the thank you message for 2 seconds
         thankYouMessage.style.display = 'block';
+
+        // Change the background video source
+        backgroundVideo.src = "new-background-video.mp4"; // Replace with the path to your new video file
+        backgroundVideo.load();
+        backgroundVideo.play();
 
         console.log(`Message Position - top: ${thankYouMessage.style.top}, left: ${thankYouMessage.style.left}, z-index: ${thankYouMessage.style.zIndex}`);
         
