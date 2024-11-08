@@ -1,0 +1,14 @@
+# render.yaml
+services:
+  - type: static  # Defines that this is a static site
+    name: Seeshuraj B Portfolio  # Name of your project
+    env: static  # Environment for a static site
+    staticPublishPath: /  # Path to publish; root for static sites
+    buildCommand: "npm install && npm run build"  # Optional: build command for static files
+    publishPath: public  # The directory that contains your built files
+    branches:
+      only:
+        - main  # Specifies that only the main branch will be deployed
+    envVars:
+      - key: NODE_VERSION
+        value: "18"  # Specify Node.js version if needed for any npm commands
