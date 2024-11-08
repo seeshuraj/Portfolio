@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeshuraj B Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline id="backgroundVideo" class="fixed inset-0 w-full h-full object-cover z-0">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-gray-800 fixed top-0 left-0 w-full z-10 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-center">
+            <a href="#about" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">About</a>
+            <a href="#skills" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Skills</a>
+            <a href="#experience" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Experience</a>
+            <a href="#projects" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Projects</a>
+            <a href="#achievements" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Achievements</a>
+            <a href="#publications" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Publications</a>
+            <a href="#contact" class="mx-4 hover:text-blue-400 transition-transform duration-300 transform hover:scale-110">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header class="header-bg h-screen flex flex-col justify-center items-center text-center relative z-10">
+        <div class="absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('background-profile.jpg');"></div>
+        <h1 class="text-5xl md:text-7xl font-bold transition-transform duration-300 transform hover:scale-110 text-gradient-animated">Seeshuraj B</h1>
+        <p class="text-lg md:text-xl mt-2 transition-transform duration-300 transform hover:scale-105 text-gradient-animated">Aspiring Full Stack Developer | MSc High Performance Computing</p>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <section id="about" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">About Me</h2>
+            <div class="floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <p>Aspiring Full Stack Developer with experience in backend development, cloud engineering, and web development. Passionate about creating scalable applications and improving user experience.</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Skills</h2>
+            <div class="skills-grid mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">Programming Languages</h3>
+                    <p>Python, Java, C++, C, Swift, PHP, HTML, JavaScript, Node.js, React Native, Dart</p>
+                </div>
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">Frameworks</h3>
+                    <p>Django, Flask, Spring, AWT, Swing</p>
+                </div>
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">Databases</h3>
+                    <p>MySQL, SQLite3, Oracle, MongoDB</p>
+                </div>
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">Cloud & DevOps</h3>
+                    <p>AWS (EC2, S3, VPC, CloudWatch), Docker, Jenkins, Terraform</p>
+                </div>
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">Tools</h3>
+                    <p>Figma, Git, OpenCV, TensorFlow</p>
+                </div>
+                <div class="floating-box p-6 bg-gray-700 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="font-semibold text-lg text-blue-400">APIs</h3>
+                    <p>OpenAI API, GCP API</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Experience</h2>
+            <div class="experience-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold text-lg text-blue-400">Cloud Engineer Intern | <a href="https://beyondyouth.com" target="_blank" class="hover:text-blue-400">Beyond Youth’s Solution</a></h3>
+                <p>April 2024 – Present</p>
+                <ul class="list-disc pl-5">
+                    <li>Assisted in designing and deploying scalable cloud architectures using AWS, improving system uptime by 20%.</li>
+                    <li>Automated CI/CD pipelines using Jenkins and Docker, reducing deployment time by 40%.</li>
+                    <li>Maintained and monitored cloud infrastructure (EC2, S3, VPC) for optimal performance and security.</li>
+                </ul>
+            </div>
+            <div class="experience-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold text-lg text-blue-400">Backend Developer Intern | <a href="https://www.lyft.com" target="_blank" class="hover:text-blue-400">Lyft</a></h3>
+                <p>January 2023 – June 2023</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed RESTful APIs using Python and Flask, handling up to 1 million transactions daily.</li>
+                    <li>Optimized MongoDB queries, improving data retrieval speed by 25%.</li>
+                    <li>Worked on microservices architecture, boosting system performance by 30%.</li>
+                </ul>
+            </div>
+            <div class="experience-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold text-lg text-blue-400">Web Developer Intern | <a href="https://www.tranzmannequins.com" target="_blank" class="hover:text-blue-400">Tranz Mannequins Pvt. Ltd</a></h3>
+                <p>April 2022 – October 2022</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed and maintained an e-commerce website using Django, increasing online sales by 50%.</li>
+                    <li>Integrated payment gateways and third-party APIs to enhance transaction experience.</li>
+                </ul>
+            </div>
+            <div class="experience-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold text-lg text-blue-400">Website Developer Intern | <a href="https://www.victoriaenterprises.com" target="_blank" class="hover:text-blue-400">Victoria Enterprises</a></h3>
+                <p>June 2021 – January 2022</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed a business management website, reducing operational workload by 25% through automation.</li>
+                    <li>Maintained the website’s database using MySQL, ensuring data security and integrity.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Projects</h2>
+            <div class="project-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">Multimodal Biometric Authentication with Dynamic Hosting</h3>
+                <p>Built an advanced biometric authentication system with facial recognition, lip movement, and voice recognition. Utilized AWS services for hosting and TensorFlow/Keras for facial recognition.</p>
+            </div>
+            <div class="project-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">Face Recognition Software</h3>
+                <p>Engineered a face detection and recognition software achieving 95% accuracy with OpenCV.</p>
+            </div>
+            <div class="project-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">LLM Chat Bot</h3>
+                <p>Developed an interactive chatbot using OpenAI API and GCP API, with MongoDB for conversation storage.</p>
+            </div>
+            <div class="project-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">Text Summarizer</h3>
+                <p>Created an extractive text summarizer using a rank-based algorithm, reducing text volume by 60% while retaining key information.</p>
+            </div>
+        </section>
+
+        <section id="achievements" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Achievements</h2>
+            <ul class="list-disc pl-5 mt-4">
+                <li>Smart India Hackathon Winner (2023) – Developed an LLM-integrated chatbot.</li>
+                <li>IEEE Conocithon 1st Prize (2022) – Developed educational utilities in machine learning.</li>
+                <li>Smart India Hackathon Finalist (2022) – Recognized for an end-to-end transaction platform.</li>
+                <li>8th Place – Coding Ninja Competitive Coding (2022).</li>
+                <li>5th Place – HackforET by CMR University (2021) – Developed a virtual classes platform.</li>
+            </ul>
+        </section>
+
+        <section id="publications" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Publications & Patents</h2>
+            <div class="publication-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">Publication</h3>
+                <p><a href="https://dl.acm.org/doi/10.1145/3670105.3670217" target="_blank" class="hover:text-blue-400">Seeshuraj B, et al. “Multi-Modal Biometric Authentication with Dynamic Hosting: Enhancing Website Security using ML and AWS Cloud.”</a> <br>International Conference on Advances in Cloud Computing and Security, ACM, 2023.</p>
+            </div>
+            <div class="patent-item floating-box mt-4 p-6 rounded-lg shadow-md bg-gray-700">
+                <h3 class="font-semibold">Patent</h3>
+                <p>
+                    <a href="https://patents.vakilsearch.com/wearcomm-revolutionizing-multilingual-communication-with-enhanced-ai-answers/202441027146" target="_blank" class="hover:text-blue-400">"WEARCOMM: Revolutionizing Multilingual Communication with Enhanced AI Answers" – Patent filed in 2024.</a>
+                </p>
+            </div>
+        </section>
+                <!-- Walking Bot -->
+                <div id="walkingBot" class="walking-bot"></div>
+
+        <section id="contact" class="p-8 max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg mb-12 transform transition-transform duration-300 hover:scale-105">
+            <h2 class="text-3xl font-semibold text-blue-400 text-center">Contact</h2>
+            <p class="mt-4 text-center">Email: <a href="mailto:bhoopals@tcd.ie" class="hover:text-blue-400">bhoopals@tcd.ie</a></p>
+            <p class="text-center"> 
+                <a href="https://www.linkedin.com/in/seeshuraj-b-051260122/" target="_blank" class="hover:text-blue-400">LinkedIn</a> | 
+                <a href="https://github.com/seeshuraj" target="_blank" class="hover:text-blue-400">GitHub</a>
+            </p>            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
